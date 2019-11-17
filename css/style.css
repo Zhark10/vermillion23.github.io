@@ -1,0 +1,584 @@
+/* *{
+  box-sizing: border-box;
+  border: 1px solid red;
+
+} */
+
+body {
+  background-color: #F8F7F3;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo_block {
+  height: 100%;
+  max-width: 100%;
+    
+  background: url("../images/background_pic1.svg") top center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #075778;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center; 
+  letter-spacing: 0.05em;
+
+}
+
+.logo_image {
+  margin-top: 15%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.mobile_logo {
+  display: none;
+}
+
+@media (max-width: 661px) {
+  .main_logo {
+    display: none;
+  }
+
+  .mobile_logo {
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+   
+  }
+  .subtitle_text, .logo_text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* {
+    font-size: 24px;
+    line-height: 28px;
+
+  } */
+}
+
+.subtitle_text, .logo_text {
+  max-width: 100%;
+  font-size: 36px;
+  line-height: 48px;
+
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  /* margin-right: auto; */
+  margin-bottom: 3%;
+}
+
+.features {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 15%;
+  align-items: left;
+
+}
+
+
+
+.features-text { 
+  /* features text и title надо поправить и сделать выравнивание 
+  по правому краю в мобильной версии */
+  
+  max-width: 100%;
+  height: 20%;
+  margin-top: 15%;
+     
+}
+
+.features-picture {
+  /* margin-top: 3%;
+  max-width: 40%; */
+  /* padding: 3%; */
+  margin-left: 3%;
+
+}
+
+.mobile_features {
+  display: none;
+  align-self: center;
+}
+
+.title {
+  max-width: 100%;
+  margin-top: 10%;
+
+  /* height: 56px;
+  margin-bottom: 106px; */
+  
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FF5657;
+      
+}
+@media (max-width: 661px) {
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    /* margin-top: 25%; */
+    /* Нужно сделать маргин только в мобильной версии, в десктопной поднять
+     текст немного */
+  }
+
+  .features_title {
+    margin-left: 0%;
+  }
+  .features-text {
+    margin-top: none;
+  }
+ 
+  .main_features {
+    display: none;
+  }
+
+  .mobile_features {
+    /* margin-left: auto;
+    margin-right: auto;
+    
+    border-image-width: 100%; */
+    display: block;
+    margin-top: 3%;
+  width: 100%;
+  
+  background-color: E5E5E5;
+  object-fit: cover;
+   
+  }
+}
+
+.platforms {
+
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.platforms_title {
+  max-width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+.platforms_text {
+  
+  /* width: 100%;
+  height: 100%; */
+  margin-left: 15%;
+  margin-right: 15%;
+
+  margin-top: 8%;
+  /* top: 1772px; */
+  
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+}
+
+.main_features {
+  margin-top: 3%;
+  width: 100%;
+  
+  background-color: E5E5E5;
+  object-fit: cover;
+}
+
+
+
+
+.t2 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #075778; 
+
+}
+
+@media (max-width: 661px) {
+  .t2 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #075778; 
+  }
+}
+
+
+.user-flow-title {
+  margin-left: 15%;
+  margin-bottom: 5%;
+  max-width: 50%;
+
+}
+
+
+.personal_data, .feedback {
+  margin-left: 15%;
+  /*margin-right: 15%; */
+  /* max-width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  /* justify-content: center; */
+}
+
+.personal-data-text, .feedback-text {
+  /* max-width: 100%; */
+  /* height: 20%; */
+  /* margin-top: 15%; */
+  /* width: 70%;
+  flex: 0 0 70%; */
+  max-width: 40%;
+}
+
+.personal-data-image, .feedback-img {
+  /* margin-left: 15%; */
+  /* width: 30%; */
+  /* flex: 0 0 30%; */
+  margin-left: 3%;
+  max-width: 40%;
+
+}
+
+/* .personal-data-text, .personal-data-image, .feedback-text, .feedback-img {
+  max-width: 40%;
+} */
+
+
+.stats, .test {
+
+  margin-left: 15%;
+  /*margin-right: 15%; */
+  /* max-width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  /* justify-content: left;
+  align-items: left; */
+  
+/*  
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center; */
+}
+
+.test-text, .stats-text {
+  max-width: 40%;
+  margin-left: 3%;
+  text-align: right;
+}
+
+.test-img, .stats-img {
+  max-width: 40%;
+}
+
+@media (max-width: 661px) {
+  .personal-data-text, .personal-data-image, .feedback-text, .feedback-img {
+    margin-top: 10%;
+    max-width: 100%;
+    padding: 5%;
+  }
+
+  .personal-data-image,.feedback-img {
+    margin-left: 0%;
+    margin-top: 0%;
+  
+  }
+
+  .test-text, .test-img, .stats-text,.stats-img {
+    margin-top: 10%;
+    margin-left: 0%;
+    max-width: 100%;
+    padding: 5%;
+    text-align: left;
+  }
+}
+
+
+
+.solution {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* justify-content: space-around;
+  align-items: center; */
+/* 
+  max-width: 1152px;
+  height: 489px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; */
+}
+
+.solution_title{
+  
+  max-width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+.solution_text {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+
+  /* font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #075778; */
+}
+
+.solution-technologies {
+
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+
+  /* font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #075778; */
+
+}
+
+.solution-technologies span {
+  color: #FF5657;
+}
+
+
+
+.challenges {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* max-width: 1152px;
+  height: auto; */
+
+}
+
+.challenges_title {
+  max-width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  /* font-family: Roboto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FF5657; */
+}
+
+.challenges-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+ 
+
+}
+
+.main_screens {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  
+  align-content: center;
+  /* background-size: cover; */
+
+}
+
+.main_screens_mobile {
+  display: none;
+}
+
+@media (max-width: 661px) {
+  .main_screens {
+    display: none;
+  }
+  .main_screens_mobile {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+.development {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: space-around;
+  align-items: center; */
+/* 
+  max-width: 1152px; */
+  /* height: auto; */
+
+}
+
+.development_title {
+  max-width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.development_text {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+
+}
+
+.development_image {
+  margin-top: 5%;
+  max-width: 100%;
+}
+
+.development_image_mob {
+  display: none;
+}
+
+@media (max-width: 661px) {
+  .development_image {
+    display: none;
+  }
+  .development_image_mob {
+    display: block;
+    max-width: 100%;
+    
+    margin-top: 5%
+  }
+
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  
+  justify-content: center;  */
+/* 
+  max-width: 1152px;
+  height: auto; */
+  max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+
+}
+
+.review_title {
+  /* align-content: flex-start;
+  display: flex; */
+  max-width: 70%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%
+  max-width: 100%;
+  /* width: 1152px;
+  height: 56px; */
+
+}
+
+.review_name {
+  max-width: 70%;
+  margin-top: 7%;
+  margin-left: 15%;
+  margin-right: 15%
+  /* display: flex;
+  align-content: flex-start;
+
+  width: 1152px;
+  height: 64px; */
+ 
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+
+  color: #075778;
+}
+
+
+.square {
+  max-width: 70%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-right: 15%
+  /* max-width: 1152px;
+  height: 532px; */
+   
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+}
+
+.review_text {
+
+  /* max-width: 958px;
+  height: auto;
+   */
+  padding: 5%;
+  /* font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  align-self: auto;
+  
+  letter-spacing: 0.05em;
+  color: #075778; */
+}
+/* 
+@media (max-width: 661px) {
+  .review_text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+} */
