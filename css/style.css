@@ -234,9 +234,9 @@ body {
   }
 }
 
-@media (max-width: 416px) {
+@media (max-width: 480px) {
   .t2 {
-    font-size: 80%;
+    font-size: 70%;
     line-height: 19px;
     letter-spacing: 0.05em;
     color: #075778; 
@@ -426,7 +426,8 @@ body {
   }
   .challenges_img_mobile {
     display: block;
-    max-width: 100%;
+    /* object-fit: cover; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
