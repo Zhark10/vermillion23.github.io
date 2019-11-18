@@ -85,7 +85,7 @@ body {
   /* features text и title надо поправить и сделать выравнивание 
   по правому краю в мобильной версии */
   
-  max-width: 100%;
+  width: 100%;
   height: 20%;
   margin-top: 15%;
      
@@ -109,7 +109,9 @@ body {
   }
   .features_img_mobile {
     display: block;
-    margin-left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -225,7 +227,7 @@ body {
 
 }
 
-@media (max-width: 661px) {
+@media (max-width: 576px) {
   .t2 {
     font-size: 18px;
     line-height: 21px;
@@ -428,8 +430,8 @@ body {
     display: block;
     /* object-fit: cover; */
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
 }
@@ -472,14 +474,14 @@ body {
   display: none;
 }
 
-@media (max-width: 661px) {
+@media (max-width: 576px) {
   .development_image {
     display: none;
   }
   .development_image_mob {
     display: block;
-    max-width: 100%;
-    
+    /* max-width: 100%; */
+   width: 100%;
     margin-top: 5%
   }
 
