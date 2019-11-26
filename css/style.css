@@ -12,7 +12,7 @@ body {
 
 .logo_block {
   height: 100%;
-  max-width: 100%;
+  min-width: 100%;
     
   background: url("../images/background_pic1.svg") top center;
   background-size: cover;
@@ -21,10 +21,7 @@ body {
   flex-direction: column;
 
   color: #075778;
-  /* font-weight: 400;
-  font-size: 36px; */
-  text-align: center; 
-  letter-spacing: 0.05em;
+  font-weight: 400;
 
 }
 
@@ -36,6 +33,33 @@ body {
 
 .mobile_logo {
   display: none;
+}
+
+
+
+.subtitle_text, .logo_text {
+  /* max-width: 100%; */
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  /* margin-right: auto; */
+  margin-bottom: 3%;
+}
+
+.features {
+  /* max-width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 15%;
+  align-items: left;
+
 }
 
 @media (max-width: 661px) {
@@ -50,42 +74,18 @@ body {
    
   }
   .subtitle_text, .logo_text {
-    /* font-size: 24px; */
-    /* line-height: 28px; */
-    font-size: 100%;
+    /* font-weight: 400; */
+    font-size: 18px;
+    line-height: 21px;
   }
 }
-
-.subtitle_text, .logo_text {
-  max-width: 100%;
-  font-size: 36px;
-  line-height: 48px;
-
-  margin-top: 5%;
-  margin-left: 15%;
-  margin-right: 15%;
-  /* margin-right: auto; */
-  margin-bottom: 3%;
-}
-
-.features {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  margin-left: 15%;
-  align-items: left;
-
-}
-
 
 
 .features-text { 
   /* features text и title надо поправить и сделать выравнивание 
   по правому краю в мобильной версии */
   
-  width: 100%;
+  /* width: 100%; */
   height: 20%;
   margin-top: 15%;
      
@@ -113,7 +113,30 @@ body {
     margin-right: auto;
     width: 100%;
   }
+  .features-text, .features_title {
+    width: fit-content;
+    margin-left: 15%
+  }
+  
+  .features {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 0;
+  
+  }
 }
+
+/* @media (max-width: 360px) {
+  .features_img_mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+} */
 
 @media (max-width: 1314px) {
   .features_img {
@@ -128,7 +151,7 @@ body {
 }
 
 .title {
-  max-width: 100%;
+  max-width: 100%;  /* Может нужно убрать? */
   margin-top: 10%;
 
   /* height: 56px;
@@ -150,9 +173,6 @@ body {
      текст немного */
   }
 
-  .features_title {
-    margin-left: 0%;
-  }
   .features-text {
     margin-top: none;
   }
@@ -227,24 +247,7 @@ body {
 
 }
 
-@media (max-width: 576px) {
-  .t2 {
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.05em;
-    color: #075778; 
-  }
-}
 
-@media (max-width: 480px) {
-  .t2 {
-    font-size: 70%;
-    line-height: 19px;
-    letter-spacing: 0.05em;
-    color: #075778; 
-  }
-
-}
 
 
 .user-flow-title {
@@ -430,8 +433,9 @@ body {
     display: block;
     /* object-fit: cover; */
     width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
+    
+    /* margin-left: 3%;
+    margin-right: 3%; */
   }
 
 }
@@ -542,6 +546,25 @@ body {
 
 .review_text {
   padding: 5%;
+}
+
+@media (max-width: 576px) {
+  .t2 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #075778; 
+  }
+}
+
+@media (max-width: 480px) {
+  .t2 {
+    font-size: 70%;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #075778; 
+  }
+
 }
 /* 
 @media (max-width: 661px) {
