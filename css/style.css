@@ -1,14 +1,20 @@
-*{
+/* *{
   box-sizing: border-box;
   border: 1px solid red;
 
-}
+} */
 
 body {
   background-color: #F8F7F3;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+/* нужно подключить внешние шрифты
+
+@font-face{font-family: Roboto-Light; src: url(../font/Roboto-Light.ttf);}
+@font-face{font-family: Roboto-Regular; src: url(../font/Roboto-Regular.ttf);}
+@font-face{font-family: Roboto-Medium; src: url(../font/Roboto-Medium.ttf);}
+@font-face{font-family: Roboto-Bold; src: url(../font/Roboto-Bold.ttf);} */
 
 .logo_block {
   height: 100%;
@@ -185,6 +191,30 @@ body {
 }
 
 
+.section {
+  width: 1152px;
+ 
+  display: flex;
+  flex-direction: row;
+  margin: 5% 15%;
+}
+
+.section .col:first-child {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.personal-data-image {
+  margin-left: 20%;
+  /* Не нашла способа сделать это по-другому */
+}
+
+
+/* .section >.title {
+  селектор ul > li выберет только дочерние элементы <li>, которые находятся внутри, на первом уровне вложенности по отношению к элементу <ul>.
+} */
+
 
 
 .user-flow-title {
@@ -193,7 +223,7 @@ body {
 
 }
 
-.personal_data, .feedback {
+/* .personal_data, .feedback {
   margin-top: 5%;
   margin-left: 15%;
   margin-right: 15%;
@@ -201,17 +231,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   
-}
+} */
 
-.personal-data-text, .feedback-text {
-  max-width: 40%;
-}
 
-.personal-data-image, .feedback-img {
-  max-width: 100%;
-}
 
-.test, .stats {
+
+/* .test, .stats {
   margin-top: 5%;
   margin-left: 15%;
   margin-right: 15%;
@@ -220,16 +245,16 @@ body {
   text-align: right;
   justify-content: space-between;
 
-}
+} */
 
-.stats-text, .test-text {
+/* .stats-text, .test-text {
   max-width: 40%;
 }
 
 .test-img, .stats-img {
   max-width: 100%;
 }
-
+ */
 
 
 .solution {
@@ -476,7 +501,7 @@ body {
 
 
 
-@media (max-width: 1028px) {
+/* @media (max-width: 1028px) {
   .personal_data, .feedback {
     margin-left: 15%;
     margin-right: 15%;
@@ -502,7 +527,7 @@ body {
     width: 100%;
     margin-top: 10%;
   }
-}
+} */
 
 
 @media (max-width: 661px) {
@@ -536,8 +561,7 @@ body {
 
   .title {
     max-width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5% auto 15%;
     font-size: 24px;
     line-height: 28px;
   }
