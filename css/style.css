@@ -4,325 +4,303 @@
 } */
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url("/fonts/Roboto-Bold.ttf")format("ttf"), url("/fonts/Roboto-Regular.ttf")format("ttf");
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto-Bold.ttf") format("ttf"),
+    url("/fonts/Roboto-Regular.ttf") format("ttf");
 }
 
 .main {
-    background-color: #F8F7F3;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+  background-color: #f8f7f3;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 .section {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    /* justify-content: center; */
-    max-width: 1152px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  /* justify-content: center; */
+  max-width: 1152px;
 }
 
 .section .col:first-child {
-    width: 49%;
+  width: 49%;
 }
 .section .col:nth-child {
-    width: 50%;
+  width: 50%;
 }
-
 
 .row {
-    display: flex;
-    flex-direction: column;
-    max-width: 1152px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1152px;
+  margin: 0 auto;
 }
-
 
 .description_text {
-    margin-top: 8%;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    letter-spacing: 0.05em;
-    color: #075778;
+  margin-top: 8%;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.05em;
+  color: #075778;
 }
 
-
 .title {
-    margin-top: 10%;
-    font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #FF5657;
-    max-width: 1152px;
+  margin-top: 10%;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ff5657;
+  max-width: 1152px;
 }
 
 .promo-block {
-    background: url("/images/promo_background_pic.png") no-repeat center center;
-    background-size: cover;
-
+  background: url("/images/promo_background_pic.png") no-repeat center center;
+  background-size: cover;
 }
 
-
-
 .promo-block__content {
-    max-width: 1152px;
-    flex-direction: column;
+  max-width: 1152px;
+  flex-direction: column;
 }
 
 .promo-block__logo-image {
-    max-width: 661px;
-    margin: 15% auto;
+  max-width: 661px;
+  margin: 15% auto;
 }
 
 .mobile_logo {
-    display: none;
+  display: none;
 }
 
-.promo-block__first-text, .promo-block__second-text {
-    font-size: 2.25rem;
-    color: #075778;
-    line-height: 3rem;
-    letter-spacing: 0.05em;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 3%;
+.promo-block__first-text,
+.promo-block__second-text {
+  font-size: 2.25rem;
+  color: #075778;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .user_flow {
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.test_text, .stats_text {
-    text-align: right;
+.test_text,
+.stats_text {
+  text-align: right;
 }
 
 .features_content {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 .features_text {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 .features_img {
-    margin: 1rem 0 0 3.1rem;
-    max-width: 100%;
-
-
+  margin: 1rem 0 0 3.1rem;
+  max-width: 100%;
 }
 
-.test, .stats {
-    flex-direction: row-reverse;
+.test,
+.stats {
+  flex-direction: row-reverse;
 }
 
 .platforms_background_picture {
-    margin-top: 5%;
-    background: url(/images/plarforms_background.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 1080px;
+  margin-top: 5%;
+  background: url(/images/plarforms_background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1080px;
 }
 
 .solution_technologies span {
-    color: #FF5657;
+  color: #ff5657;
 }
 
-
 .challenges_container {
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow: hidden;
-    /* position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* position: relative;
     z-index: 1; */
 }
 
 .challenges_screens {
-    margin: 5% auto 1% auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 723px;
-    max-width: 1857px;
+  display: flex;
+  flex-direction: row;
+  height: 40vw;
+  justify-content: space-around;
+  padding: 24px 0;
+}
+
+.challenges_screens img {
+  width: 18vw;
 }
 
 .screens {
-    max-width: 100%;
-    height: auto;
-    filter: drop-shadow(8px 8px 10px gray);
-    margin: 0 auto 5% auto;
-    /* overflow: hidden; */
+  filter: drop-shadow(8px 8px 10px gray);
 }
 
-.challenges_screen_1, .challenges_screen_3, .challenges_screen_5 {
-    align-self: flex-start;
+.challenges_screen_1,
+.challenges_screen_3,
+.challenges_screen_5 {
+  align-self: flex-start;
 }
 
-.challenges_screen_2, .challenges_screen_4 {
-    align-self: flex-end;
+.challenges_screen_2,
+.challenges_screen_4 {
+  align-self: flex-end;
 }
 
 .development_background_picture {
-    margin-top: 5%;
-    background: url(/images/dev_image.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 674px;
+  margin-top: 5%;
+  background: url(/images/dev_image.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 674px;
 }
 
 .review {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .review_square {
-    /* max-width: 100%; */
-    margin: 5% auto 15% auto;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
+  /* max-width: 100%; */
+  margin: 5% auto 15% auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 
 .review_text {
-    margin: 5%;
+  margin: 5%;
 }
 
 @media (max-width: 1279px) {
-    .features_img {
-        overflow: hidden;
-    }
+  .features_img {
+    overflow: hidden;
+  }
 
-    .section, .row {
-        margin: 0 5% 0 5%;
-    }
+  .section,
+  .row {
+    margin: 0 5% 0 5%;
+  }
 
-    .user_flow_title {
-        margin-top: 10%;
-    }
-    
-    .challenges_screens {
-        max-width: 1072px;
-        margin: 5% auto;
-        height: auto;
-        /* height: 1500px; */
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-    }
-
-    .challenges_screen_1, .challenges_screen_2, .challenges_screen_3, .challenges_screen_4, .challenges_screen_5 {
-        max-width: 45%;
-    }
-
-    .challenges_screen_2 {
-        margin: 0 17% -29% 0;
-    }
-
-    .challenges_screen_4 {
-        margin: 0 17% -30% 0;
-    }    
+  .user_flow_title {
+    margin-top: 10%;
+  }
 }
 
 @media (max-width: 1024px) {
+  .section,
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .section, .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .section .col:first-child {
+    width: 100%;
+  }
+  .section .col:nth-child {
+    width: 100%;
+  }
 
-    .section .col:first-child {
-        width: 100%;
-    }
-    .section .col:nth-child {
-        width: 100%;
-    }
-    
-    .section img {
-        max-width: 100%;
-    }
+  .section img {
+    max-width: 100%;
+  }
 
-    .features_img {
-        margin: 1rem 0 0 0;
-    }
+  .features_img {
+    margin: 1rem 0 0 0;
+  }
 
+  .platforms_background_picture {
+    height: 800px;
+  }
 
-    .platforms_background_picture {
-        height: 800px;
-    }
+  .user_flow {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .user_flow {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .test_text,
+  .stats_text {
+    text-align: left;
+  }
 
-    .test_text, .stats_text {
-        text-align: left;
-    }
+  .u_flow_image {
+    margin: 5% auto;
+  }
 
-    .u_flow_image {
-        margin: 5% auto;
-    }
-    
-    .review_square {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        border-radius: 0;
-    }
+  .review_square {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    border-radius: 0;
+  }
 
+  .challenges_screens {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 310vw;
+    justify-content: center;
+  }
+
+  .challenges_screens img {
+    margin: 2vw;
+    height: 90vw;
+    width: auto;
+  }
 }
-
-@media (max-width: 825px) {
-    .challenges_screen_2 {
-        margin: 0 4% -29% 0;
-    }
-
-    .challenges_screen_4 {
-        margin: 0 4% -30% 0;
-    }
-}
-
 
 @media (max-width: 661px) {
-    .title {
-        max-width: 100%;
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-    }
+  .title {
+    max-width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
 
-    .main_logo {
-        display: none;
-    }
-    .mobile_logo {
-        max-width: 307px;
-        margin: 0 auto;
-        display: block;
-    }
-    .promo-block__first-text, .promo-block__second-text {
-        margin-top: 5%;
-        font-size: 1.1rem;
-        line-height: 1.3rem;
-    }
+  .main_logo {
+    display: none;
+  }
+  .mobile_logo {
+    max-width: 307px;
+    margin: 0 auto;
+    display: block;
+  }
+  .promo-block__first-text,
+  .promo-block__second-text {
+    margin-top: 5%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
 
-    .description_text {
-        margin-top: 8%;
-        font-size: 1.1rem;
-        line-height: 1.3rem;
-        letter-spacing: 0.05em;
-        color: #075778;
-    }
-    
+  .description_text {
+    margin-top: 8%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.05em;
+    color: #075778;
+  }
 }
 
 @media (max-width: 480px) {
-    .platforms_background_picture {
-        height: 384px;
-    }
-    .development_background_picture {
-        background: url(/images/dev_image_mob.png) no-repeat center center;
-        background-size: cover;
-        height: 304px;
-    }
+  .platforms_background_picture {
+    height: 384px;
+  }
+  .development_background_picture {
+    background: url(/images/dev_image_mob.png) no-repeat center center;
+    background-size: cover;
+    height: 304px;
+  }
 }
